@@ -4,4 +4,4 @@ import {config} from 'dotenv';
 config({path: `.env.${process.env.NODE_ENV || 'development'}.local`}); 
 
 //export the PORT and NODE_ENV environment variables to be imported in file that use them
-export const {PORT, NODE_ENV} = process.env;
+export const {PORT, NODE_ENV, DB_URI} = process.env;
